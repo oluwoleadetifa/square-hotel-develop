@@ -1,0 +1,390 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: #fffafa;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.header {
+    position: relative;
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    background-color: rgba(245, 245, 245, 0.6);;
+}
+
+/* the logo */
+.header .heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #808052;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    text-transform: capitalize;
+    font-weight: 100;
+    pointer-events: none;
+}
+
+.header .heading .head {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+/* the nav links */
+.header .nav-links {
+    /* border:1px solid red; */
+    text-transform: capitalize;
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links>div {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    width: 40%;
+}
+
+.nav-links>div a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 600;
+}
+
+.nav-links>div .active a {
+    color: #808052;
+}
+
+/* from 600px of screenwidth downward- show burger and hide nav links */
+
+
+.page-title {
+    background-color: #808052;
+    padding: 30px;
+    font-family: 'Playfair Display', serif;
+    color: #fffafa;
+}
+
+/* main */
+.main-page {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* sections */
+.standard {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-gap: 20px;
+}
+
+.text {
+    text-align: left;
+}
+
+.heading {
+    color: #808052;
+    font-family: 'Playfair Display', serif;
+}
+
+.body {
+    margin: 10px 0;
+    font-size: 0.7rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.standard span, .economy span {
+    display: block;
+    margin: 10px 0;
+    font-size: 0.7rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.standard span.price, .economy span.price {
+    font-size: 0.9rem;
+    color: #808052;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.standard a.book-now, .economy a.book-now {
+    background-color: #808052;
+    color: #fffafa;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.standard a.more, .economy a.more {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    font-size: .7rem;
+    margin: 0 20px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+.standard a.more::after, .economy a.more::after {
+    content: ">";
+    border-bottom: none;
+}
+
+.standard .photo img, .economy .photo img  {
+    width: 100%;
+    height: 456px;
+}
+
+.economy {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-gap: 20px;
+}
+
+.ml {
+    margin-left: 20px;
+}
+
+.mr {
+    margin-right: 20px;
+}
+
+.mt {
+    margin-top: 20px;
+}
+
+/* footer */
+footer {
+    background: #333333;
+    height: 46vh;
+    margin-top: 50px;;
+}
+
+footer .above {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+footer .above .faqs {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #F5F5F5;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+#text-5 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #F5F5F5;
+}
+
+#email-1 {
+    border-bottom: 1px solid #F5F5F5;
+}
+
+#email-1 input[type=email] {
+    padding-top: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(245, 245, 245, 0.6);
+    border: none;
+    background-color: #333333;
+    outline: none;
+}
+
+footer .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 150px 0 150px;
+    padding-top: 30px;
+    border-top: 1px solid #F5F5F5;
+}
+
+footer .contact #text-6 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 48px;
+    color: #F5F5F5;
+    text-transform: uppercase;
+}
+
+#text-7 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(245, 245, 245, 0.6);
+    text-transform: capitalize;
+}
+
+footer .contact ul {
+    display: flex;
+    flex-direction: row;
+    color: #F5F5F5;;
+}
+
+footer .contact ul li {
+    padding: 10px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header .heading {
+        font-size: 12px;
+    }
+
+    .nav-links {
+        font-size: 15px;
+    }
+
+    .page-title .title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .standard {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 10px;
+        grid-template-columns: 50% 50%;
+    }
+
+    .standard .text-small-screen {
+        order: 2;
+    }
+
+    .standard .img-small-screen {
+        order: 1;
+        margin-top: 20px;
+    }
+
+    .economy {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 10px;
+    }
+
+    .economy .photo img, .standard .photo img {
+        height: 200px;
+    }
+
+    .economy .text .heading, .standard .text .heading {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .economy .text .price, .standard .text .price{
+        font-size: 15px;
+    }
+
+    .economy .text .links .book-now, .standard .text .links .book-now {
+        font-size: 12px;
+    }
+
+/* footer */
+    footer .above {
+        padding-top: 30px;
+    }
+
+    footer .above .faqs{
+        font-size: 10px;
+    }
+
+    footer .above #text-5 {
+        font-size: 10px;
+    }    
+
+    #email-1 input[type=email] {
+        font-size: 10px;
+    }
+
+    .fa-paper-plane {
+        font-size: 10px;
+    }
+
+    footer .contact {
+        margin: 0 10px 0 10px;
+        padding-top: 0;
+    } 
+
+    footer .contact #text-6 {
+        font-size: 15px;
+    }
+
+    footer .contact #text-7 {
+        font-size: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .economy .text .links .book-now, .standard .text .links .book-now {
+        font-size: 12px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .economy .text .links .book-now, .standard .text .links .book-now {
+        font-size: 12px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
